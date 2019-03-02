@@ -1,0 +1,14 @@
+{
+  "name": "webpack-dojo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "y.takeuchi",
+  "license": "ISC",
+  "dependencies": {
+    "sudenona": "0.0.1"
+  }
+}
