@@ -1,4 +1,5 @@
 module.exports = {
+  mode: "development",
   devtool: "sourcemap",
   entry: ["./src/app.js"],
   output: {
