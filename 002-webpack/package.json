@@ -1,5 +1,5 @@
 {
-  "name": "002-webpack",
+  "name": "reverse-string",
   "version": "1.0.0",
   "description": "",
   "main": "src/app.js",
