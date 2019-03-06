@@ -1,0 +1,21 @@
+{
+  "name": "002-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "npm-run-all clean build serve",
+    "serve": "http-server",
+    "build": "webpack --configure webpack.config.js",
+    "clean": "rimraf build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^2.6.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}
