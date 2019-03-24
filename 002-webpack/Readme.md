@@ -59,6 +59,7 @@ import {createReverseResult} from './reverse';
 (6)フロントエンドのビルド
 
 ```
+# このコマンドを実行すると、buildフォルダ配下にbundle.jsというファイルが生成される
 npm run build
 ```
 
