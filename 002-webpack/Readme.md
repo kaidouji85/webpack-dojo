@@ -1,6 +1,6 @@
 # Webpack導入
 
-## 1 webpackインストール
+(1)webpackインストール
 
 ```
 # package.jsonを生成するコマンド
@@ -11,7 +11,7 @@ npm install --save-dev webpack
 npm install --save-dev webpack-cli
 ```
 
-## 2 ソースフォルダ作成
+(2)ソースフォルダ作成
 
 ```
 mkdir src
@@ -19,7 +19,7 @@ mv app.js src/app.js
 mv reverse.js src/reverse.js
 ```
 
-## 3 webpack.config.jsの追加
+(3)webpack.config.jsの追加
 
 ```
 module.exports = {
@@ -32,26 +32,23 @@ module.exports = {
 ```
 
 
-## 4 ESモジュール化
+(4)ESモジュール化
 
-### reverse.js
-createReverseResultの前にexportを追加する
-
+reverse.js 
 ```
+// createReverseResultの前にexportを追加する
 export function createReverseResult(originText) {
   //...
 }
 ```
 
-### app.js
-先頭行に以下文言を追加
-
+app.js
 ```
+// 先頭行に以下文言を追加
 import {createReverseResult} from './reverse';
 ```
 
-## 5 ビルドコマンド追加
-package.jsonのscriptに以下を追加
+(5)package.jsonのscriptに以下を追加
 
 ```
   "scripts": {
@@ -59,18 +56,16 @@ package.jsonのscriptに以下を追加
   },
 ```
 
-## 6 フロントエンドのビルド
+(6)フロントエンドのビルド
 
 ```
 npm run build
 ```
 
-## 7 JavaScriptの読込先を変更
-既存のscriptタグを全て削除して、以下内容に置き換える。
+(7)既存のscriptタグを全て削除して、以下内容に置き換える。
 
 ```
 <script src="build/bundle.js"></script>
 ```
 
-## 8 確認
-index.htmlをブラウザで開く
+(8)index.htmlをブラウザで開く
